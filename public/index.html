@@ -27,7 +27,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <meta name='apple-mobile-web-app-capable' content='yes'>
     <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
     <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
-    <link rel='stylesheet' href='css/common.css'>
+    <link rel='stylesheet' href='common.css'>
 
     <title>Immersive VR Session</title>
 
@@ -48,19 +48,19 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       </details>
     </header>
     <main style='text-align: center;'>
-      <p>Click 'Enter XR' to see content</p> 
+      <p>Click 'Enter XR' to see content</p>
     </main>
     <script type="module">
-      import {WebXRButton} from './js/util/webxr-button.js';
-      import {Scene} from './js/render/scenes/scene.js';
-      import {Renderer, createWebGLContext} from './js/render/core/renderer.js';
-      import {Gltf2Node} from './js/render/nodes/gltf2.js';
-      import {SkyboxNode} from './js/render/nodes/skybox.js';
-      import {QueryArgs} from './js/util/query-args.js';
+      import {WebXRButton} from '/webxr-button.js';
+      import {Scene} from '/scene.js';
+      import {Renderer, createWebGLContext} from '/renderer.js';
+      import {Gltf2Node} from '/gltf2.js';
+      import {SkyboxNode} from '/skybox.js';
+      import {QueryArgs} from '/query-args.js';
 
       // If requested, use the polyfill to provide support for mobile devices
       // and devices which only support WebVR.
-      import WebXRPolyfill from './js/third-party/webxr-polyfill/build/webxr-polyfill.module.js';
+      import WebXRPolyfill from '/webxr-polyfill.module.js';
       if (QueryArgs.getBool('usePolyfill', true)) {
         let polyfill = new WebXRPolyfill();
       }

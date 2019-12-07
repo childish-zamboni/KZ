@@ -1,0 +1,7 @@
+{
+  "name": "Website",
+  "description": "Kailas's personal website",
+  "repository": "https://github.com/The-Real-Taylor-Swift/website",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
